@@ -1,6 +1,7 @@
 def binary_search(arr, l, r, x):
     """
     implement of binary search.
+    time complexity O(Logn)
     :param arr: sorted array
     :param l: array start position
     :param r: array end position
@@ -22,4 +23,4 @@ def binary_search(arr, l, r, x):
 def test():
     A = [12,14,45,56,67,89]
     x = 14
-    print("the result is:" + str(binary_search(A, 0, len(A), x)))
+    print("the result is:" + str(binary_search(A, 0, len(A) - 1, x)))

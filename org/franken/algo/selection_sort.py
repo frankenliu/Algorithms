@@ -1,4 +1,10 @@
 def selection_sort(arr):
+    """
+    implement of selection sort.
+    time complexity O(n2)
+    :param arr: unsort array
+    :return: the sort array
+    """
     if len(arr) <= 1:
         return
 

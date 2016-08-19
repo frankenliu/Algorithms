@@ -9,5 +9,12 @@ class LinkedList:
     def get_number(self):
         return self.number
 
+    def set_number(self, num):
+        self.number = num
+
     def get_next_node(self):
         return self.next_node
+
+    def set_next_node(self, node):
+        self.next_node = node
+

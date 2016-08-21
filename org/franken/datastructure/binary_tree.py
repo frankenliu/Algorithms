@@ -1,27 +1,24 @@
-class BinaryTree:
-    number = 0
-    left_node = None
-    right_node = None
+class Node:
 
-    def __index__(self, num=0, l_node=None, r_node=None):
-        self.number = num
-        self.left_node = l_node
-        self.right_node = r_node
+    def __init__(self, num=0):
+        self.__number = num
+        self.__left_node = None
+        self.__right_node = None
 
     def get_number(self):
-        return self.number
+        return self.__number
 
     def set_number(self, num):
-        self.number = num
+        self.__number = num
 
     def get_left_node(self):
-        return self.left_node
+        return self.__left_node
 
     def set_left_node(self, node):
-        self.left_node = node
+        self.__left_node = node
 
     def get_right_node(self):
-        return self.right_node
+        return self.__right_node
 
     def set_right_node(self, node):
-        self.right_node = node
+        self.__right_node = node

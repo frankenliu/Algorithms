@@ -57,5 +57,4 @@ def test():
     A = [64, 25, 12, 22, 11]
     merge_sort(A, 0, len(A) - 1)
     print("Merge sort:Sorted array")
-    for i in range(len(A)):
-        print("%d" % A[i])
+    print(A)

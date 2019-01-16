@@ -20,28 +20,6 @@ def partition(arr, low, high):
     return low
 
 
-def partition2(arr, low, high):
-    """
-    This function takes last element as pivot, places
-    the pivot element at its correct position in sorted
-    array, and places all smaller (smaller than pivot)
-    to left of pivot and all greater elements to right
-    of pivot
-    :param arr: unsort array
-    :param low: the start position of arr
-    :param high: the end position of arr
-    :return: the pivot position
-    """
-    i = low - 1
-    pivot = arr[high]
-    for j in range(low, high):
-        if arr[j] <= pivot:
-            i += 1
-            arr[i], arr[j] = arr[j], arr[i]
-    arr[i+1], arr[high] = arr[high], arr[i+1]
-    return i+1
-
-
 def quick_sort(arr, low, high):
     """
     implement of quick sort
@@ -64,5 +42,4 @@ def test():
     A = [64, 25, 12, 22, 11]
     quick_sort(A, 0, len(A) - 1)
     print("Sorted array")
-    for i in range(len(A)):
-        print("%d" % A[i])
+    print(A)

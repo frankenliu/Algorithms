@@ -1,2 +1,7 @@
 /.idea
 *.pyc
+/org/__pycache__
+/org/franken/__pycache__
+/org/franken/algo/__pycache__
+/org/franken/datastructure/__pycache__
+/org/franken/interviewQ/__pycache__

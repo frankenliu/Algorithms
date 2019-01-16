@@ -37,5 +37,4 @@ def test():
     A = [64, 25, 12, 22, 11]
     heap_sort(A)
     print("Sorted array")
-    for i in range(len(A)):
-        print("%d" % A[i])
+    print(A)
